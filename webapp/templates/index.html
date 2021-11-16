@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+
+  <title>Jarvis</title>
+</head>
+
+<body>
+  <div class="jumbotron jumbotron-fluid custom-jumbotron">
+    <div class="container-container">
+      <div class="row">
+        <div class="col-sm-1 wb">
+          <!-- <button class="no-design" id="wake"><img src="../static/img/1.png" width="70px" height="70px" alt=""></button> -->
+          <input onclick="voice();" type="submit" value="O" class="btn wake-button" id="wake" >
+        </div>
+        <div class="col-sm-4">
+          <h4 class="tag"><i>Just say "Jarvis" or type your requirement</i></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <div class="SideBar">
+    <div class="Nav"><i class="fas fa-home m-2"></i> Home</div>
+    <div class="Nav"><i class="far fa-address-card m-2"></i> About</div>
+    <div class="Nav"><i class="fas fa-book m-2"></i> Resources</div>
+    <div class="Nav"><i class="fas fa-compass m-2"></i> Things to Try</div>
+    <div class="Nav"><i class="fa fa-info-circle m-2"></i> Help and Feedback</div>
+    <a href="http://localhost:8501/"  target="_blank"><div class="Nav"><i class="fas fa-chart-line m-2"></i> Stock Predictions</div></a>
+  </div>
+
+  <div class="row">
+    <div class="offset-sm-5 col-sm-6">
+        <div class="form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <input class="form-control" placeholder="How Can I Help You?" type="text" name="req" id="req" />
+          </div>
+          <input onclick="launch();" id="launchbtn" type="submit" value="Submit" class="btn btn-primary mb-2" />
+        </div>
+    </div>
+  </div>
+
+
+<div class="row">
+<div class="offset-sm-5" col-sm-5>
+  <br>
+  <br>
+<div class="card text-black bg-light mb-3" style="width: 500px; height: 300px;">
+  <div class="card-header"></div>
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <h6><div id="output"></div></h6>
+  </div>
+</div>
+</div>
+</div>
+
+
+  <script src="../static/js/index.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+  
+
+
+
+
